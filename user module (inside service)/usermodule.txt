@@ -1,0 +1,43 @@
+to generate user defined module -
+ng g module products
+
+component inside a module - 
+ng g c product/productname
+
+gc(generate component)
+
+by using featuered module angualr the application will become loosly coupled
+if i add perticular feature to a module then we dont need to worry about other modules
+
+modularity :) -- deviding the one huge module into serval modules
+                or creating a new user module and loosly connecting them
+
+import{common module} contains the ng directives no need to import or anything
+
+AppModule inside this appcomponent
+product inside this productdashboard
+to export the product module 
+
+in app component==root module, then import first and add that to imprts array.
+
+import and export module and module component 
+
+featuered or user modules are eager in nature it means by rooting these modules in main component all the 
+modules load at a time in a browser after the serve after the serve it becomes traficated,
+by using lazy loading technique we can load a feature module while it is needed by the user.
+
+user modulecomponent should be exported and user module should be imported
+
+If you want to provide routing for user module then we should use load children property of routes module
+
+In case of main rout  method is forRout,in case of child method is forChild
+
+Lazy loading ---- without user/feature module lazy loading is not possible
+remove import from app module
+remove export from from the user module
+remove the selector tag fom the app component html
+parent routing/rout routing==if i want to provide normal routing then {path:"',products,loadChildren:''
+inside the feature module i have to assign the child routing{path"", }
+
+[router and router should be inside the array of module.ts]
+

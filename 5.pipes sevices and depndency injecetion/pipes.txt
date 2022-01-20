@@ -1,0 +1,6 @@
+pipes allow us to tronsoform data before disolaying thwm in the  view
+appended- added by the angular
+
+
+
+goodnight sleep and good thought

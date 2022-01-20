@@ -1,0 +1,64 @@
+<!-- 
+codi
+<h2 *ngIf="true">coding</h2> //try fasle
+
+<h2 *ngIf="display"> coder</h2> -->
+----if esle in *ngIf-----
+<h2 *ngIf="displayName; else elseblock">
+  code please
+</h2>
+
+<ng-template #elseblock>
+  <h2>
+   life is learning
+  </h2>
+</ng-template>
+
+<h3 *ngIf="ok; else goto">why</h3>
+<ng-template #goto><h2>how</h2></ng-template>
+
+
+
+
+
+-----another syntax for *ngIf if else  -------
+<div *ngIf="display; then thenblock ; else elseblock"></div>
+<ng-template #thenblock>
+  <h2>
+    yes
+  </h2>
+  </ng-template>
+
+<ng-template #elseblock>
+  <h2>
+    no
+  </h2>
+</ng-template>
+
+__-----ngSwitch -------
+
+<div [ngSwitch]="color"> 
+  <div *ngSwitchCase="'red'">you chose red</div>
+  <div *ngSwitchCase="'blue'">you chose blue</div>
+  <div *ngSwitchCase="'green'">you like green</div>
+  <div *ngSwitchDefault="mango">again pick</div>
+  </div>
+
+  ----ng for-----
+---helps us to render list of element --for loop like here we loop html elements---
+
+<div *ngFor="let color of colors; index as i">
+  <h2>{{i}}{{color}}</h2>
+</div>
+<div *ngFor ="let color of colors; first as f">
+  <h2>{{f}}{{color}}</h2>
+</div>
+ <div *ngFor="let color of colors; last as l">
+   <h2>{{l}}{{color}}</h2>
+ </div>
+ <div *ngFor="let color of colors;odd as o">
+   <h3>{{o}}{{color}}</h3>
+ </div>
+ <div *ngFor="let color of colors;even as e">
+   <h3>{{e}}{{color}}</h3>
+ </div>

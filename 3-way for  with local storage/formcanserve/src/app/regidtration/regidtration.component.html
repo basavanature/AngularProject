@@ -1,0 +1,18 @@
+<p>regidtration works!</p>
+<div class="container">
+    <div class="col-md-4">
+    <form #regform="ngForm" (ngSubmit)="onSubmit(regform)" >
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="text"  #uename="ngModel" name="uename" ngModel>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="upass" id="exampleInputPassword1" #upass="ngModel" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</div>
+</div>
+<form >

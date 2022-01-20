@@ -1,0 +1,26 @@
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th>Street</th>
+        <th>Suite</th>
+        <th>City</th>
+        <th>ZipCode</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of result">
+        <th>{{user.id}}</th>
+        <td>{{user.name| lowercase}}</td>
+        <td>{{user.username |titlecase}}</td>
+        <td>{{user.email }}</td>
+        <td>{{user.address.street|titlecase}}</td>
+        <td>{{user.address.suite|titlecase}}</td>
+        <td>{{user.address.city|titlecase}}</td>
+        <td>{{user.address.zipcode|titlecase}}</td>
+      </tr>
+    </tbody>
+  </table>

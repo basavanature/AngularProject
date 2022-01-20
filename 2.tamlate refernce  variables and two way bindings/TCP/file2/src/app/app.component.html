@@ -1,0 +1,24 @@
+temparory refernce variable
+
+<input #myinput type="text">
+<button (click)="logmessge(myinput.value)">squeez</button>
+
+<input #id type="number">
+<button (click)="activate(id.value)">press</button>
+
+
+
+
+
+
+
+-----two way binding-----use of ngModule--
+<input [(ngModel)] ="name" type="text">
+{{name}}
+
+
+<input [(ngModel)]="ok"type="password">
+{{ok}}
+
+<input [(ngModel)]="take" type="number">
+{{take}}
